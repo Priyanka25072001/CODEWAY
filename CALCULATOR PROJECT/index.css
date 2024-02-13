@@ -1,0 +1,76 @@
+/* CSS RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+/* STYLING OF WHOLE CALCUALTOR */
+.calculator {
+  background-color: indigo;
+  border: 5px solid rgb(47, 16, 69);
+  height: 360px;
+  width: 300px;
+  margin-top: 20px;
+}
+
+/* STYLING OF CALCULATOR HEAD */
+.heading {
+  background-color: rgb(47, 16, 69);
+  height: 45px;
+}
+
+.heading h1 {
+  font-size: 35px;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  padding: 3px 14px;
+}
+
+/* STYLING OF CALCULATOR INPUT(RESULT) */
+.calc_result {
+  height: 40px;
+}
+
+.calc_result input {
+  width: 95%;
+  margin: 3px 2px;
+  padding: 2px 3px;
+  font-size: medium;
+}
+
+/* STYLING OF CALCULATOR KEYS */
+.calc_keys {
+  height: 75%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.button {
+  margin: 5px 5px;
+  border: 2px solid rgba(240, 236, 236, 0.941);
+  border-radius: 30%;
+  font-size: 30px;
+  background-color: rgb(175, 183, 182);
+}
+
+.button:hover {
+  background-color: rgba(175, 183, 182, 0.438);
+}
+
+@media screen and (max-width: 540px) {
+  .calculator {
+    height: 300px;
+    width: 250px;
+  }
+
+  .button {
+    margin: 3px 3px;
+    font-size: 20px;
+  }
+}
